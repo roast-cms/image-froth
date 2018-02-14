@@ -1,15 +1,20 @@
 import { froth, getFroth } from "../src"
 
+// all constants are required
 const FROTH_CONSTANTS = {
+  // cloudinary server and subfolder location
   server: "https://res.cloudinary.com/analog-cafe/image/upload/",
+  // transformations (array) for images (kept constant)
   transformations: "c_scale,fl_progressive",
+  // all sizes are image widths; heights are relative
   sizes: {
-    i: "40",
-    t: "280",
-    s: "520",
-    m: "1268",
-    l: "1800"
+    i: "40", // icon
+    t: "280", // tiny
+    s: "520", // small
+    m: "1268", // medium
+    l: "1800" // large
   },
+  // placeholder image src (in this case it's a white dot)
   placeholder:
     "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
 }
