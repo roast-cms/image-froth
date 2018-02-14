@@ -22,13 +22,13 @@ const FROTH_CONSTANTS = {
 console.log(
   "froth object from src string",
   froth(
-    { src: "image-froth_1681956_9ad677d272a84ebc9360ad6199372f8b" },
+    { src: "image-froth_1500000_BJ7LbcnLGb" },
     FROTH_CONSTANTS
   )
 )
 console.log(
   "froth src string from URL",
   getFroth(
-    "https://res.cloudinary.com/analog-cafe/image/upload/c_scale,fl_progressive,w_1268/image-froth_1681956_9ad677d272a84ebc9360ad6199372f8b.jpg"
+    "https://res.cloudinary.com/analog-cafe/image/upload/c_scale,fl_progressive,w_1268/image-froth_1500000_BJ7LbcnLG.jpg"
   )
 )
