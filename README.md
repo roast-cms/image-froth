@@ -105,4 +105,4 @@ froth(
 ```
 
 ### Contributing
-PRs and issue reports are welcome. Please submit all PRs to `develop` branch. To test, run `yarn webpack-dev-server`
+PRs and issue reports are welcome. Please submit all PRs to `develop` branch. To test, run `yarn start`
