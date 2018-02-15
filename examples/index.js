@@ -11,7 +11,7 @@ const FROTH_CONSTANTS = {
     i: "40", // icon
     t: "280", // tiny
     s: "520", // small
-    m: "1268", // medium
+    m: "1268", // medium (required default)
     l: "1800" // large
   },
   // placeholder image src (in this case it's a white dot)
