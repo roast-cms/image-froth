@@ -23,7 +23,7 @@ console.log(
   "froth object from src string",
   froth(
     { src: "image-froth_1500000_BJ7LbcnLGb" },
-    
+    FROTH_CONSTANTS
   )
 )
 console.log(

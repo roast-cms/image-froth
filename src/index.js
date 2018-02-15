@@ -8,7 +8,7 @@ export const froth = (options = {}, CONSTANTS) => {
   let type = options.type || "jpg"
   let crop = options.crop || "none"
 
-  let width = CONSTANTS.sizes[size]
+  let width = parseInt(CONSTANTS.sizes[size])
   let height = null
   let ratio = 0
 
