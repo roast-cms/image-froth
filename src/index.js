@@ -1,7 +1,8 @@
-
-  // example froth src:
-// image-froth_1681956_9ad677d272a84ebc9360ad6199372f8b
 export const froth = (options = {}, CONSTANTS) => {
+  if(!CONSTANTS){
+    console.error("Constants required but not provided: froth({}, CONSTANTS)");
+    return
+  }
   let src = options.src || CONSTANTS.placeholder
   let size = options.size || "m"
   let type = options.type || "jpg"
