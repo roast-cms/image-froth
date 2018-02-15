@@ -1,12 +1,12 @@
 {
-  "name": "image-froth",
-  "version": "1.0.0",
+  "name": "@roast-cms/image-froth",
+  "version": "0.1.0",
   "description": "A tool to help query the right responsive image with preset dimensions.",
   "main": "src/index.js",
   "repository": "https://github.com/roast-cms/image-froth.git",
   "author": "dmitrizzle <d@analog.cafe>",
   "license": "MPL-2.0",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-cli": "^6.0.0",
