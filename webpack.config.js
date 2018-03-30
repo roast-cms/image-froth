@@ -5,16 +5,24 @@ module.exports = {
     publicPath: "/lib/"
   },
   module: {
-    loaders: [
+    rules: [
       {
-        loader: "babel-loader",
         test: /\.js$/,
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        loader: "babel-loader",
+        query: {
+          presets: [],
+          plugins: []
+        }
       }
     ]
   },
+  resolve: { extensions: ["*", ".js"] },
   devServer: {
-    port: 3002
+    port: 3002,
+    historyApiFallback: {
+      index: "examples/index.html"
+    }
   },
   devtool: "inline-source-map"
 }
