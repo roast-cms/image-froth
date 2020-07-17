@@ -11,8 +11,8 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader",
         query: {
-          presets: [],
-          plugins: []
+          presets: ["@babel/preset-react", "@babel/preset-env"],
+          plugins: ["@babel/plugin-proposal-class-properties"]
         }
       }
     ]
@@ -25,4 +25,4 @@ module.exports = {
     }
   },
   devtool: "inline-source-map"
-}
+};
