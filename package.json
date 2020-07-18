@@ -22,9 +22,6 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "prepare": "babel src --presets @babel/preset-es2015 --out-dir dist"
-  },
-  "dependencies": {
-    "@babel/preset-es2015": "^7.0.0-beta.53"
+    "prepare": "babel src --presets @babel/preset-env --out-dir dist"
   }
 }
