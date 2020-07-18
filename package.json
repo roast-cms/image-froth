@@ -1,6 +1,6 @@
 {
   "name": "@roast-cms/image-froth",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A tool to help query the right responsive image with preset dimensions.",
   "main": "dist/index.js",
   "repository": "https://github.com/roast-cms/image-froth.git",
@@ -22,6 +22,9 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "prepare": "babel src --out-dir dist"
+    "prepare": "babel src --presets @babel/preset-es2015 --out-dir dist"
+  },
+  "dependencies": {
+    "@babel/preset-es2015": "^7.0.0-beta.53"
   }
 }
