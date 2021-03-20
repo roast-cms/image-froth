@@ -24,7 +24,7 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: [{ from: "src/types.d.ts", to: "dist/types.d.ts" }],
+      patterns: [{ from: "src/types.d.ts", to: "types.d.ts" }],
     }),
   ],
   experiments: { outputModule: true },
