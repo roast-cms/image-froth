@@ -1,6 +1,6 @@
 {
   "name": "@roast-cms/image-froth",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A tool to help query the right responsive image with preset dimensions.",
   "main": "dist/bundle.js",
   "repository": "https://github.com/roast-cms/image-froth.git",
