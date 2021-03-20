@@ -19,7 +19,7 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     library: {
-      type: "module",
+      type: "umd",
     },
   },
   plugins: [
@@ -27,5 +27,4 @@ module.exports = {
       patterns: [{ from: "src/types.d.ts", to: "types.d.ts" }],
     }),
   ],
-  experiments: { outputModule: true },
 };
