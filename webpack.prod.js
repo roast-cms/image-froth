@@ -2,7 +2,6 @@ const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
 module.exports = {
   mode: "production",
-  globalObject: "this",
   entry: path.resolve(__dirname, "src/index.ts"),
   module: {
     rules: [
@@ -19,10 +18,9 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    library: {
-      type: "umd",
-      umdNamedDefine: true,
-    },
+    library: "froth",
+    libraryTarget: "umd",
+    globalObject: "this",
   },
   plugins: [
     new CopyPlugin({
