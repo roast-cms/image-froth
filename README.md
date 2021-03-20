@@ -14,6 +14,11 @@ This tool solves this issue by adopting a simple image naming system and generat
 
 ### What you will need.
 
+```
+# first you'll need the package:
+yarn add @roast-cms/image-froth
+```
+
 This tool is built to be used with [Cloudinary](https://cloudinary.com) image management service, though you can easily adopt it to work with whatever image storage tool you use.
 
 You will, however, have to change the way you name your image files to:
