@@ -59,5 +59,6 @@ typings/
 
 # ignore distribution filder
 dist
-src/**/*.js
-examples/**/*.js
+
+# ignore compiled JS files
+_dev
