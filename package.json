@@ -17,6 +17,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
+    "audit:fix": "npx yarn-audit-fix",
     "dev": "webpack serve ./dist/example.js --mode development",
     "build:dev": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js --progress",
