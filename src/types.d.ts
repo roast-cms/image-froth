@@ -35,25 +35,13 @@ export interface frothConstants {
   Map of available sizes to predefined one-letter shortcuts.
   */
   sizes: {
-    /**
-    Icon-sized images.
-    */
-    i?: string;
-    /**
-    Tiny images or avatars.
-    */
-    t?: string;
-    /**
-    Small images.
-    */
-    s?: string;
-    /**
-    Medium-sized images.
-    */
-    m?: string;
-    /**
-    Large images.
-    */
-    l?: string;
+    "icon-m"?: string;
+    "icon-l"?: string;
+    "image-s"?: string;
+    "image-m"?: string;
+    "image-l"?: string;
+    "image-xl"?: string;
+    "image-xxl"?: string;
+    "image-xxxl"?: string;
   };
 }

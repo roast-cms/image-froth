@@ -1,6 +1,6 @@
 {
   "name": "@roast-cms/image-froth",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "description": "A tool to help query the right responsive image with preset dimensions.",
   "main": "dist/bundle.js",
   "repository": "https://github.com/roast-cms/image-froth.git",
@@ -14,7 +14,7 @@
     "typescript": "^4.2.3",
     "webpack": "^5.26.3",
     "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.3"
+    "webpack-dev-server": "^4.15.1"
   },
   "scripts": {
     "audit:fix": "npx yarn-audit-fix",

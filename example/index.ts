@@ -8,12 +8,16 @@ const FROTH_CONSTANTS = {
   transformations: "c_scale,fl_progressive",
   // all sizes are image widths; heights are relative
   sizes: {
-    i: "40", // icon
-    t: "280", // tiny
-    s: "520", // small
-    m: "1268", // medium (required default)
-    l: "1800", // large
+    "icon-m": "120",
+    "icon-l": "280",
+    "image-s": "480",
+    "image-m": "640",
+    "image-l": "880",
+    "image-xl": "1268",
+    "image-xxl": "1800",
+    "image-xxxl": "3000",
   },
+
   // placeholder image src (in this case it's a white dot)
   placeholder:
     "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
@@ -21,11 +25,11 @@ const FROTH_CONSTANTS = {
 
 console.log(
   "froth object from src string",
-  froth({ src: "image-froth_1500000_BJ7LbcnLGb" }, FROTH_CONSTANTS)
+  froth({ src: "image-froth_1503759_f00XmodEz" }, FROTH_CONSTANTS)
 );
 console.log(
   "froth src string from URL",
   getFroth(
-    "https://res.cloudinary.com/analog-cafe/image/upload/c_scale,fl_progressive,w_1268/image-froth_1500000_BJ7LbcnLG.jpg"
+    "https://res.cloudinary.com/analog-cafe/image/upload/c_scale,fl_progressive,w_640/image-froth_1500000_BJ7LbcnLG.jpg"
   )
 );

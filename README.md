@@ -43,8 +43,8 @@ froth(
     server: "https://res.cloudinary.com/analog-cafe/image/upload/",
     transformations: "",
     sizes: {
-      m: "520", // medium (this is required)
-      l: "1800", // large
+      "image-s": "480", // (this is required)
+      "image-m": "640",
     },
     // placeholder image src (in this case it's a white dot)
     placeholder:
@@ -53,10 +53,10 @@ froth(
 );
 // will return:
 // {
-//   height: 347
-//   width: 520
+//   height: 320
+//   width: 480
 //   ratio: 1.5
-//   src: "https://res.cloudinary.com/analog-cafe/image/upload/c_scale,fl_progressive,w_1268/image-froth_1500000_BJ7LbcnLGb.jpg"
+//   src: "https://res.cloudinary.com/analog-cafe/image/upload/c_scale,fl_progressive,w_480/image-froth_1500000_BJ7LbcnLGb.jpg"
 //   type: "jpg"
 // }
 ```
@@ -88,7 +88,7 @@ froth(
         src: "image-froth_1500000_BJ7LbcnLG.jpg",
 
         // here you can choose a pre-determined image size (see below):
-        size: "s"
+        size: "image-s"
 
         // `froth()` will return the full image URL:
         }).src
@@ -96,11 +96,11 @@ froth(
     media="(max-width: 480px)"
   />
   <source
-    srcSet={froth({ src: "image-froth_1500000_BJ7LbcnLG.jpg", size: "l" }).src}
+    srcSet={froth({ src: "image-froth_1500000_BJ7LbcnLG.jpg", size: "image-l" }).src}
     media="(min-width: 1201px)"
   />
   <img
-    src={froth({ src: "image-froth_1500000_BJ7LbcnLG.jpg", size: "l" }).src}
+    src={froth({ src: "image-froth_1500000_BJ7LbcnLG.jpg", size: "image-l" }).src}
     style={{
       // going along with the above CSS trick for padding-bottom rule
       height: froth({ src }).ratio ? "100%" : "initial"
