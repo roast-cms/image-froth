@@ -25,7 +25,7 @@ const FROTH_CONSTANTS = {
 
 console.log(
   "froth object from src string",
-  froth({ src: "image-froth_1500000_BJ7LbcnLGb" }, FROTH_CONSTANTS)
+  froth({ src: "image-froth_1503759_f00XmodEz" }, FROTH_CONSTANTS)
 );
 console.log(
   "froth src string from URL",
