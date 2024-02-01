@@ -18,7 +18,7 @@ export const froth = (
     return;
   }
   let src = options.src || CONSTANTS.placeholder;
-  let size = options.size || "m";
+  let size = options.size || "image-s";
   let type = options.type || "jpg";
   let crop = options.crop || "none";
 
