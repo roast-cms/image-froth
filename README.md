@@ -53,10 +53,10 @@ froth(
 );
 // will return:
 // {
-//   height: 347
-//   width: 520
+//   height: 320
+//   width: 480
 //   ratio: 1.5
-//   src: "https://res.cloudinary.com/analog-cafe/image/upload/c_scale,fl_progressive,w_1268/image-froth_1500000_BJ7LbcnLGb.jpg"
+//   src: "https://res.cloudinary.com/analog-cafe/image/upload/c_scale,fl_progressive,w_480/image-froth_1500000_BJ7LbcnLGb.jpg"
 //   type: "jpg"
 // }
 ```
