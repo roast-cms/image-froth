@@ -21,6 +21,7 @@ export const froth = (
   let size = options.size || "image-s";
   let type = options.type || "jpg";
   let crop = options.crop || "none";
+  let raw = options.raw || false;
 
   // @ts-ignore
   let width = parseInt(CONSTANTS.sizes[size]);
@@ -35,14 +36,22 @@ export const froth = (
 
   if (src.indexOf("image-froth") > -1 && src.indexOf("/") === -1) {
     if (crop === "none") {
-      src = `${CONSTANTS.server}${CONSTANTS.transformations},w_${width}/${src}.${type}`;
+      src = `${
+        CONSTANTS.server + CONSTANTS.transformations + raw
+          ? ""
+          : `,w_${width}/` + src
+      }.${type}`;
       ratio =
         parseInt(src.split("image-froth_").pop().split("_").shift()) / 1000000;
       height = Math.round(width / ratio);
     } else if (crop === "square") {
       ratio = 1;
       height = width;
-      src = `${CONSTANTS.server}c_fill,g_auto,w_${width},h_${height}/${src}.${type}`;
+      src = `${
+        CONSTANTS.server + raw
+          ? ""
+          : `c_fill,g_auto,w_${width},h_${height}/` + src
+      }.${type}`;
     }
   }
   return {

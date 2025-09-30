@@ -15,6 +15,10 @@ export interface frothOptions {
   Can add request to crop the image into a square.
   */
   crop?: "square";
+  /**
+  Skip transformatijons.
+  */
+  raw?: boolean;
 }
 
 export interface frothConstants {
