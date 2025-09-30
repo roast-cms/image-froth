@@ -37,9 +37,10 @@ export const froth = (
   if (src.indexOf("image-froth") > -1 && src.indexOf("/") === -1) {
     if (crop === "none") {
       src = `${
-        CONSTANTS.server + CONSTANTS.transformations + raw
-          ? ""
-          : `,w_${width}/` + src
+        CONSTANTS.server +
+        CONSTANTS.transformations +
+        (raw ? "" : `,w_${width}/`) +
+        src
       }.${type}`;
       ratio =
         parseInt(src.split("image-froth_").pop().split("_").shift()) / 1000000;
@@ -48,9 +49,9 @@ export const froth = (
       ratio = 1;
       height = width;
       src = `${
-        CONSTANTS.server + raw
-          ? ""
-          : `c_fill,g_auto,w_${width},h_${height}/` + src
+        CONSTANTS.server +
+        (raw ? "" : `c_fill,g_auto,w_${width},h_${height}/`) +
+        src
       }.${type}`;
     }
   }
